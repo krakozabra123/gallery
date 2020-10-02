@@ -1,0 +1,80 @@
+* {
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: Roboto ;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+body{
+	background-color: #E1D7FF;
+	font-family: Roboto;
+}
+main {
+	width:70%;
+	padding:50px;
+	margin:auto;
+	background-color: #fff;
+	display:flex; /*делает отображение вне сетки в линию*/
+	flex-wrap:wrap; /*устанавливает для flex учитывание размеров блока*/
+	justify-content: center; /*выравнивает по центру, работает в связке с flex*/
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+
+.photo {
+	width: calc(50% - 40px);
+	height: calc((35vw - 40px)/16*9);
+	margin: 10px;
+	background-color: orange;
+	background-size: cover; /*auto-автоматическое масштабирование, cover - ширина или высота изображения равняется ширине или высоте блока, contain- масштаб такой, чтобы катинка целиком помещалась внутрь блока
+*/	background-position: center;
+	transition: all 0.5s ease;/* добавляет плавности анимации*/
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+h1{
+	width:100%;
+	text-align: center; /*выравнивает текст по центру*/
+	font-size: 48px; /*размер текста*/
+}
+.photo:hover{
+	transform: rotate(3deg) scale(1.07); /*rotate - поворот, scale - масштабирование по x и y, scaleX (scaleY) - масштабирование по x(Y),skewX-наклон по вертикали,translate - сдвигает элемент*/
+}
+.photo1{
+	background-image: url(../img/img1.jpeg);
+
+}
+.photo2{
+	background-image: url(../img/img2.jpeg);
+}
+.photo3{
+	background-image: url(../img/img3.jpeg);
+}
+.photo4{
+	background-image: url(../img/img4.jpeg);
+}
+.photo5{
+	background-image: url(../img/img5.jpeg);
+}
+.photo6{
+	background-image: url(../img/img6.jpeg);
+}
+.photo7{
+	background-image: url(../img/img7.jpeg);
+}
+.photo8{
+	background-image: url(../img/img8.jpeg);
+
+}
+.photo9{
+	background-image: url(../img/img9.jpeg);
+}
+.photo10{
+	background-image: url(../img/img10.jpeg);
+}
+.photo11{
+	background-image: url(../img/img11.jpg);
+}
+.photo12{
+	background-image: url(../img/img12.jpeg);
+}
